@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html ng-app="taxPayerModule" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+
+<link href="style/bootstrap.css" rel="stylesheet" />
+<link href="style/bootstrap-theme.min.css" rel="stylesheet" />
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+
+<script src="libs/angular-resource.js"></script>
+
+
+<script src="libs/taxPayerController.js"></script>
+
+
+
+</head>
+<body ng-controller="taxPayerController">
+	<div class="panel panel-primary">
+		<h3 class="panel-heading">Tax Payer</h3>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4">
+					<div class="form-group">
+						<label>Name</label> <input type="text" class="form-control "
+							ng-model="contact.name" id="data.name" />
+					</div>
+					<div class="form-group">
+						<label>Address</label> <input type="text" class="form-control"
+							ng-model="data.address" id="address" />
+					</div>
+
+					<div class="form-group">
+						<label>PAN</label> <input type="text " class="form-control"
+							ng-model="data.pan" id="pan" />
+					</div>
+
+					<div class="form-group">
+						<label>DOB</label> <input type="datetime-local"
+							class="form-control" ng-model="data.dob" id="dob" />
+					</div>
+
+					<div class="form-group">
+						<label>Assessment Year</label> <input type="number"
+							class="form-control" ng-model="data.assessmentYear"
+							ng-maxlength="4" id="assessmentYear" />
+					</div>
+
+
+					<div class="form-group">
+						<label>Income</label> <input type="number" class="form-control"
+							ng-model="data.income" id="income" />
+					</div>
+
+
+					<div class="form-group">
+						<label>TDS</label> <input type="number" class="form-control"
+							ng-model="data.tds" id="tds" />
+					</div>
+
+					<div class="form-group">
+						<label>Tax Deduction</label> <input type="number"
+							class="form-control" ng-model="data.taxDeduction"
+							id="taxDeduction" />
+					</div>
+
+					<button class="btn btn-xs btn-primary" ng-click="AddTaxPayer(data)">
+						Save</button>
+					<button class="btn btn-xs btn-primary" ng-click="cancel()">
+						Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
