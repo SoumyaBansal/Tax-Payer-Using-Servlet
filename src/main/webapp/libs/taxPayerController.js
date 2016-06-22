@@ -13,7 +13,7 @@ taxPayerModule.controller("taxPayerController", function($scope) {
 		alert('I am in add function');
 		$http({
 			method : 'POST',
-			url : 'UserController',
+			url : 'taxPayerServlet',
 			headers : {
 				'Content-Type' : 'application/json'
 			},

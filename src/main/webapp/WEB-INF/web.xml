@@ -5,13 +5,13 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-  	<servlet-name>javaAngularJS</servlet-name>
-  	<display-name>AngularJsServlet</display-name>
+  	<servlet-name>taxPayerServlet</servlet-name>
+  	<display-name>taxPayerServlet</display-name>
   	<description></description>
-  	<servlet-class>javaAngularJS</servlet-class>
+  	<servlet-class>controller.taxPayerServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>javaAngularJS</servlet-name>
-  	<url-pattern>/javaAngularJS</url-pattern>
+  	<servlet-name>taxPayerServlet</servlet-name>
+  	<url-pattern>/taxPayerServlet</url-pattern>
   </servlet-mapping>
 </web-app>
